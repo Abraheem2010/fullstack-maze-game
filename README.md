@@ -4,14 +4,10 @@ A full-stack maze game with 3 stages and a Hall of Fame leaderboard.
 Each stage measures the player's completion time, sends the result to the backend,  
 and the server stores only the best (fastest) record per stage.
 
-## 🚀 Live Demo
-https://maze-game-q9ps.onrender.com
-
 ## 🛠️ Tech Stack
 - **Frontend:** React
 - **Backend:** Node.js + Express
 - **Database:** SQLite
-- **Deployment:** Render
 
 ## 📁 Project Structure
 ```
