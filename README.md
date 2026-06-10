@@ -4,6 +4,12 @@ A full-stack maze game with 3 stages and a Hall of Fame leaderboard.
 Each stage measures the player's completion time, sends the result to the backend,  
 and the server stores only the best (fastest) record per stage.
 
+## What it demonstrates
+- A REST API (Express) with input validation and a SQLite-backed leaderboard
+- Server-side "keep only the best time per stage" logic
+- A React single-page client: multi-stage game flow + leaderboard view
+- Full-stack wiring — the React build is served by the same Express server
+
 ## 🛠️ Tech Stack
 - **Frontend:** React
 - **Backend:** Node.js + Express
@@ -18,8 +24,7 @@ maze-game/
 │       └── App.js
 ├── server/         # Express backend
 │   ├── server.js
-│   ├── db.js
-│   └── maze_records.db
+│   └── db.js       # SQLite connection — auto-creates maze_records.db on first run
 ```
 
 ## ⚙️ Installation & Running Locally
